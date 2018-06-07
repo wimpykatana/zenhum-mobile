@@ -1,13 +1,33 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View, SafeAreaView, TextInput } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 class Explore extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text>Explore page</Text>
-            </View>
+            <SafeAreaView style={{ flex: 1 }}>
+                <View style={{flex: 1}}>
+                    <View style={ styles.searchHolder }>
+                        <View style={{
+                            flexDirection: 'row', padding:10, backgroundColor: 'white', marginHorizontal:20,
+                            borderRadius: 8,
+                            borderWidth: 1,
+                            borderColor: 'rgba(150,150,150,0.4)'
+                        }}>
+                            <Icon name='ios-search' size={ 20 } style={{ marginRight: 10, color: 'gray' }}/>
+                            <TextInput
+                                placeholder='Coba "Cipondoh, Tangerang"'
+                                placeholderTextColor='gray'
+                                style={{
+                                    flex: 1,
+                                    fontWeight: '700',
+                                    backgroundColor: 'white'
+                                }}
+                            />
+                        </View>
+                    </View>
+                </View>
+            </SafeAreaView>
         );
     }
 }
@@ -15,10 +35,9 @@ class Explore extends Component {
 export default Explore;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+    searchHolder: {
+        height: 90,
+        borderBottomWidth: 1,
+        borderBottomColor: "#ddd"
     },
 });

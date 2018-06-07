@@ -59,13 +59,21 @@ export default createBottomTabNavigator ({
             )
         }
     }
+},{
+    tabBarOptions:{
+        activeTintColor: '#5A9817',
+        inactiveTintColor: 'gray',
+        style:{
+            backgroundColor: 'white',
+            borderTopWidth: 0,
+            shadowOffset: { width:0, height:2 },
+            shadowColor: 'black',
+            shadowOpacity: 1,
+            elevation: 10,
+            paddingVertical: 10,
+            height: 60
+        }
+    }
 })
-
-const styles = StyleSheet.create({
-    iconExplore: {
-        height: 25,
-        width: 31
-    },
-});
 
 
