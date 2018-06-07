@@ -10,7 +10,7 @@ class Explore extends Component {
                     <View style={ styles.searchHolder }>
                         <View style={{
                             flexDirection: 'row', padding:10, backgroundColor: 'white', marginHorizontal:20,
-                            borderRadius: 8,
+                            borderRadius: 10,
                             borderWidth: 1,
                             borderColor: 'rgba(150,150,150,0.4)'
                         }}>
@@ -18,10 +18,12 @@ class Explore extends Component {
                             <TextInput
                                 placeholder='Coba "Cipondoh, Tangerang"'
                                 placeholderTextColor='gray'
+                                underlineColorAndroid='transparent'
                                 style={{
                                     flex: 1,
                                     fontWeight: '700',
-                                    backgroundColor: 'white'
+                                    backgroundColor: 'white',
+
                                 }}
                             />
                         </View>
@@ -38,6 +40,7 @@ const styles = StyleSheet.create({
     searchHolder: {
         height: 90,
         borderBottomWidth: 1,
-        borderBottomColor: "#ddd"
+        borderBottomColor: "#ddd",
+        paddingTop: 10,
     },
 });
