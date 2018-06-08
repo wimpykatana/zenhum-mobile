@@ -9,6 +9,7 @@ import Profile from './screens/Profile';
 import Upload from './screens/Upload';
 
 export default createBottomTabNavigator ({
+
     Explore:{
         screen: Explore,
         navigationOptions:{
